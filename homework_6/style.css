@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
     margin: 0;
 }
 
@@ -25,92 +24,49 @@ body {
     margin: 10px;
 }
 
-.common-content {
+.content {
     display: flex;
+    font-weight: 500;
+    font-size: calc(16/720*100vw);
 }
 
-.common-content-aside {
+.content-aside {
     color: #000000;
     position: fixed;
     top: 120px;
     left: 35px;
-    width: 200px;
-    font-weight: 500;
-    border-right: 2px solid #a7a5a5;
-    height: 300px;
+    width: 100%;
 }
 
-.common-content-aside__wrap {
+.content-aside__wrap {
     margin-top: 10px;
 }
 
-.common-content-aside__link {
+.content-aside__link {
     text-decoration-line: underline;
     color: #FF710B;
 }
 
-.common-content-list {
+.content-list {
     position: relative;
-    width: 60%;
+    width: 100%;
     top: 120px;
-    left: 255px;
+    margin-left: calc(210/720*100vw);
 }
 
-.common-content-alphabeticalsorting {
+.content-sorting {
     background: #590BFF;
-    margin-left: 35px;
     position: sticky;
-    top: 95px;
-}
-
-.common-content-alphabetletters {
-    color: #FFFFFF;
-    font-weight: 500;
-    margin-left: 10px;
-}
-
-.common-content-surnames {
-    margin: 20px;
-    font-weight: 500;
-    margin-left: 45px;
-}
-
-.common-footer {
-    height: 160px;
-    background: #590BFF;
-    position: absolute;
-    top: 3730px;
+    top: 89px;
     width: 100%;
 }
 
-.common-footer-wrap {
-    display: flex;
+.content-letters {
+    color: #FFFFFF;
+    margin-left: 10px;
 }
 
-.common-footer-bloc {
-    color: #ffffff;
-    float: left;
-    line-height: 35px;
-    width: 33.33%;
-    margin-top: 35px;
-    text-align: center;
-    font-weight: 500;
+.content-surnames {
+    margin: 20px;
 }
 
-.common-footer__contacts {
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-}
-
-.common-footer__license {
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-}
-
-.common-footer__externallinks {
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-}
