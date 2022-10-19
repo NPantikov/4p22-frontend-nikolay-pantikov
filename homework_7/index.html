@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form class="form">
+      <h1>Вход</h1>
+      <label class="label" for="email">Email</label>
+      <input
+        class="input"
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Введите email"
+      />
+      <label class="label" for="password">Пароль</label>
+      <input
+        class="input"
+        id="password"
+        name="password"
+        type="password"
+        placeholder="Введите пароль"
+      />
+      <div class="input-container">
+        <input id="checkbox" name="checkbox" type="checkbox" />
+        <label for="checkbox">Я согласен получать обновления на почту</label>
+      </div>
+      <button class="button">Войти</button>
+    </form>
+  </body>
+</html>
