@@ -12,7 +12,7 @@ body {
 
     .form {
         width: calc(728 / 768 * 100vw);
-        height: calc(717 / 768 * 100%);
+        height: calc(697 / 768 * 100%);
         margin: calc(20 / 768 * 100vw);
         background: #FFFFFF;
         box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
@@ -21,11 +21,11 @@ body {
         flex-direction: column;
     }
 
-    h1 {
-        margin-top: calc(38 / 768 * 100vw);
-        margin-right: calc(302 / 768 * 100vw);
-        margin-bottom: 0;
-        margin-left: calc(288 / 768 * 100vw);
+
+    .form-title {
+        padding-top: calc(38 / 768 * 100vw);
+        padding-right: calc(302 / 768 * 100vw);
+        padding-left: calc(288 / 768 * 100vw);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -35,11 +35,10 @@ body {
         text-align: center;
     }
 
-    .label {
-        margin-top: calc(13 / 768 * 100vw);
-        margin-right: 0;
-        margin-bottom: calc(8 / 768 * 100vw);
-        margin-left: calc(53 / 768 * 100vw);
+    .label-email {
+        padding-top: calc(13 / 768 * 100vw);
+        padding-bottom: calc(8 / 768 *100vw);
+        padding-left: calc(53 / 768 * 100vw);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -48,20 +47,60 @@ body {
         color: #787878;
     }
 
-    .input {
+    .label-password {
+        padding-top: calc(11 / 768 * 100vw);
+        padding-bottom: calc(8 / 768 *100vw);
+        padding-left: calc(53 / 768 * 100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .input-email {
         width: calc(638 / 768 * 100vw);
         height: calc(49 / 768 * 100vw);
         margin-left: calc(45 / 768 * 100vw);
         background: #FFFFFF;
-        border: calc(2 / 768 * 100vw) solid #787878;
+        border: 2px solid #787878;
         border-radius: calc(10 / 768 * 100vw);
-        padding-top: calc(10 / 768 * 100vw);
-        padding-right: 0;
-        padding-bottom: calc(1 / 768 * 100vw);
         padding-left: calc(15 / 768 * 100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #f1a008;
     }
 
-    input::placeholder {
+    .input-email::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .input-password {
+        width: calc(638 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        margin-left: calc(45 / 768 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        border-radius: calc(10 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #f1a008;    
+    }
+
+    .input-password::placeholder {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -73,43 +112,38 @@ body {
     .input-container {
         position: relative;
         display: flex;
-        align-content: center;
+        align-items: center;
+        height: calc(70 / 768 * 100vw);
     }
     
     .input-container input {
         position: absolute;
         opacity: 0;
-        width: calc(32 / 768 * 100vw);
-        height: calc(32 / 768 * 100vw);
         background: #FFFFFF;
-        border: calc(2 / 768 * 100vw) solid #787878;
+        border: 2px solid #787878;
         border-radius: calc(7 / 768 * 100vw);
     }
     
     .input-container label {
-        padding-top: calc(31 / 768 * 100vw);
-        padding-left: calc(90 / 768 * 100vw);
+        padding-left: calc(87 / 768 * 100vw);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: calc(18 / 768 * 100vw);
         line-height: calc(16 / 768 * 100vw);
         color: #787878;
+
     }
     
     .input-container label::before {
         content: '';
         position: absolute;
-        left: 0;
-        top: 0;
-        width: calc(32 / 768 * 100vw);
-        height: calc(32 / 768 * 100vw);
-        margin-top: calc(19 / 768 * 100vw);
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: calc(45 / 768 * 100vw);
+        top: calc(19 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(28 / 768 * 100vw);
+        height: calc(28 / 768 * 100vw);
         background: #FFFFFF;
-        border: calc(2 / 768 * 100vw) solid #787878;
+        border: 2px solid #787878;
         border-radius: calc(7 / 768 * 100vw);
     }
     
@@ -117,30 +151,29 @@ body {
         content: '';
         background: url(img/check.png);
         background-size: 100% 100%;
-        width: calc(25 / 768 * 100vw);
-        height: calc(28 / 768 * 100vw);
+        width: calc(18 / 768 * 100vw);
+        height: calc(23 / 768 * 100vw);
         position: absolute;
-        left: calc(8 / 768 * 100vw);
-        top: calc(5 / 768 * 100vw);
+        top: calc(24 / 768 * 100vw);
+        left: calc(56 / 768 * 100vw);
         opacity: 0;
         transition: opacity;
-        margin-top: calc(19 / 768 * 100vw);
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: calc(45 / 768 * 100vw);
     }
     
     .input-container input:checked + label::after {
         opacity: 1;
     }
 
+    .button-box {
+        padding-top: calc(45 / 768 * 100vw);
+        padding-right: calc(254 / 768 * 100vw);
+        padding-bottom: calc(242 / 768 * 100vw);
+        padding-left: calc(254 / 768 * 100vw);
+    }
+
     .button {
         width: calc(220 / 768 * 100vw);
         height: calc(80 / 768 * 100vw);
-        margin-top: calc(64 / 768 * 100vw);
-        margin-right: calc(254 / 768 * 100vw);
-        margin-bottom: calc(242 / 768 * 100vw);
-        margin-left: calc(254 / 768 * 100vw);
         background: #1A226B;
         border-radius: calc(10 / 768 * 100vw);
         border: #1A226B;
@@ -154,6 +187,7 @@ body {
 }
 
 @media screen and (min-width: 769px) {
+
     .form {
         width: calc(600 / 1440 * 100vw);
         height: calc(412 / 1440 * 100%);
@@ -168,11 +202,11 @@ body {
         flex-direction: column;
     }
 
-    h1 {
-        margin-top: calc(26 / 1440 * 100vw);
-        margin-right: calc(243 / 1440 * 100vw);
-        margin-bottom: 0;
-        margin-left: calc(242 / 1440 * 100vw);
+
+    .form-title {
+        padding-top: calc(26 / 1440 * 100vw);
+        padding-right: calc(243 / 1440 * 100vw);
+        padding-left: calc(242 / 1440 * 100vw);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -182,11 +216,10 @@ body {
         text-align: center;
     }
 
-    .label {
-        margin-top: calc(17 / 1440 * 100vw);
-        margin-right: 0;
-        margin-bottom: calc(3 / 1440 * 100vw);
-        margin-left: calc(53 / 1440 * 100vw);
+    .label-email {
+        padding-top: calc(17 / 1440 * 100vw);
+        padding-bottom: calc(3 / 1440 *100vw);
+        padding-left: calc(53 / 1440 * 100vw);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -195,20 +228,35 @@ body {
         color: #787878;
     }
 
-    .input {
+    .label-password {
+        padding-top: calc(13 / 1440 * 100vw);
+        padding-bottom: calc(3 / 1440 *100vw);
+        padding-left: calc(53 / 1440 * 100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .input-email {
         width: calc(509 / 1440 * 100vw);
         height: calc(49 / 1440 * 100vw);
         margin-left: calc(45 / 1440 * 100vw);
         background: #FFFFFF;
-        border: calc(2 / 1440 * 100vw) solid #787878;
+        border: 2px solid #787878;
         border-radius: calc(10 / 1440 * 100vw);
-        padding-top: calc(10 / 1440 * 100vw);
-        padding-right: 0;
-        padding-bottom: calc(1 / 1440 * 100vw);
         padding-left: calc(15 / 1440 * 100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #f1a008;
     }
 
-    input::placeholder {
+    .input-email::placeholder {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -217,46 +265,66 @@ body {
         color: #CCCCCC;
     }
 
+    .input-password {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        margin-left: calc(45 / 1440 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        border-radius: calc(10 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #f1a008;    
+    }
+
+    .input-password::placeholder {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #CCCCCC;
+    }
+    
     .input-container {
         position: relative;
         display: flex;
-        align-content: center;
+        align-items: center;
+        height: calc(56 / 1440 * 100vw);
     }
-
+    
     .input-container input {
         position: absolute;
         opacity: 0;
-        width: calc(32 / 768 * 100vw);
-        height: calc(32 / 768 * 100vw);
         background: #FFFFFF;
-        border: calc(2 / 768 * 100vw) solid #787878;
-        border-radius: calc(7 / 768 * 100vw);
+        border: 2px solid #787878;
+        border-radius: calc(7 / 1440 * 100vw);
     }
     
     .input-container label {
-        padding-top: calc(23 / 1440 * 100vw);
-        padding-left: calc(82 / 1440 * 100vw);
+        padding-left: calc(79 / 1440 * 100vw);
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: calc(14 / 1440 * 100vw);
         line-height: calc(16 / 1440 * 100vw);
         color: #787878;
+
     }
     
     .input-container label::before {
         content: '';
         position: absolute;
-        left: 0;
-        top: 0;
-        width: calc(24 / 1440 * 100vw);
-        height: calc(24 / 1440 * 100vw);
-        margin-top: calc(16 / 1440 * 100vw);
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: calc(45 / 1440 * 100vw);
+        top: calc(16 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(20 / 1440 * 100vw);
+        height: calc(20 / 1440 * 100vw);
         background: #FFFFFF;
-        border: calc(2 / 1440 * 100vw) solid #787878;
+        border: 2px solid #787878;
         border-radius: calc(7 / 1440 * 100vw);
     }
     
@@ -264,30 +332,29 @@ body {
         content: '';
         background: url(img/check.png);
         background-size: 100% 100%;
-        width: calc(19 / 1440 * 100vw);
-        height: calc(20 / 1440 * 100vw);
+        width: calc(15 / 1440 * 100vw);
+        height: calc(17 / 1440 * 100vw);
         position: absolute;
-        left: calc(6 / 1440 * 100vw);
-        top: calc(4 / 1440 * 100vw);
+        top: calc(20 / 1440 * 100vw);
+        left: calc(52 / 1440 * 100vw);
         opacity: 0;
         transition: opacity;
-        margin-top: calc(16 / 1440 * 100vw);
-        margin-right: 0;
-        margin-bottom: 0;
-        margin-left: calc(45 / 1440 * 100vw);
     }
     
     .input-container input:checked + label::after {
         opacity: 1;
     }
 
+    .button-box {
+        padding-top: calc(36 / 1440 * 100vw);
+        padding-right: calc(210 / 1440 * 100vw);
+        padding-bottom: calc(26 / 1440 * 100vw);
+        padding-left: calc(210 / 1440 * 100vw);
+    }
+
     .button {
         width: calc(180 / 1440 * 100vw);
         height: calc(52 / 1440 * 100vw);
-        margin-top: calc(52 / 1440 * 100vw);
-        margin-right: calc(210 / 1440 * 100vw);
-        margin-bottom: calc(26 / 1440 * 100vw);
-        margin-left: calc(210 / 1440 * 100vw);
         background: #1A226B;
         border-radius: calc(10 / 1440 * 100vw);
         border: #1A226B;
@@ -295,7 +362,7 @@ body {
         font-style: normal;
         font-weight: 700;
         font-size: calc(24 / 1440 * 100vw);
-        line-height: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 *100vw);
         color: #FFFFFF;
     }
 }
