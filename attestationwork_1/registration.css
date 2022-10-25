@@ -1,0 +1,645 @@
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(80 / 768 * 100vw);
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        z-index: 9999;
+    }
+
+    .header__logo {
+        width: calc(124 /768 *100vw);
+        height: calc(25 / 768 * 100vw);
+        margin-top: calc(25 / 768 * 100vw);
+        margin-left: calc(20 / 768 * 100vw);
+    }
+
+    .header__title {
+        font-weight: 700;
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(29 / 768 * 100vw);
+        color: #787878;
+        padding-top: calc(23 / 768 * 100vw);
+        padding-left: calc(34 / 768 * 100vw);
+    }
+
+    .header__registration {
+        padding-top: calc(30 / 768 * 100vw);
+        padding-left: calc(219 / 768 * 100vw);
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(19 / 768 * 100vw);
+        color: #1A226B;
+        text-decoration: none;
+    }
+
+    .header__sign-in {
+        padding-top: calc(30 / 768 * 100vw);
+        padding-left: calc(36 / 768 * 100vw);
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(19 / 768 * 100vw);
+        color: #787878;
+        text-decoration: none;
+    }
+
+    .form {
+        width: calc(600 / 768 * 100vw);
+        height: calc(383 / 768 * 100%);
+        margin-top: calc(160 / 768 * 100vw);
+        margin-right: calc(84 / 768 * 100vw);
+        margin-bottom: calc(149 / 768 * 100vw);
+        margin-left: calc(84 / 768 * 100vw);
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-title {
+        padding-top: calc(26 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(50 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+        color: #787878;
+        text-align: center;
+    }
+
+    .label-email {
+        padding-top: calc(15 / 768 * 100vw);
+        padding-bottom: calc(5 / 768 *100vw);
+        padding-left: calc(45 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .input-email {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        margin-left: calc(45 / 768 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .input-email::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .label-password {
+        padding-top: calc(11 / 768 * 100vw);
+        padding-bottom: calc(5 / 768 *100vw);
+        padding-left: calc(45 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .input-password {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        margin-left: calc(45 / 768 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #787878;    
+    }
+
+    .input-password::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .label-password-confirm {
+        padding-top: calc(11 / 768 * 100vw);
+        padding-bottom: calc(5 / 768 *100vw);
+        padding-left: calc(45 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .input-password-confirm {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        margin-left: calc(45 / 768 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #787878;    
+    }
+
+    .input-password-confirm::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .radio-title {
+        padding-top: calc(11 / 768 * 100vw);
+        padding-bottom: calc(5 / 768 *100vw);
+        padding-left: calc(43 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .gap {
+        padding-top: calc(9 / 768 * 100vw);
+    }
+
+    .radio {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: calc(14 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+        display: flex;
+        align-items: center;
+        height: calc(20 / 768 * 100vw);
+    }
+
+    .radio input {
+        display: none;
+    }
+
+    .radio input:checked ~ label::before {
+        background-color: #787878;
+    }
+
+    .radio label {
+        padding-left: calc(74 / 768 * 100vw);
+    }
+
+    .radio label::before {
+        content: '';
+        position: absolute;
+        left: calc(45 / 768 * 100vw);
+        top: 0;
+        width: calc(20 / 768 * 100vw);
+        height: calc(20 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid #787878;
+        border-radius: 50%;
+        padding: calc(2 / 768 * 100vw);
+        background-clip: content-box;
+    }
+    
+    .label-textarea {
+        padding-top: calc(11 / 768 * 100vw);
+        padding-bottom: calc(5 / 768 *100vw);
+        padding-left: calc(45 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .textarea {
+        width: calc(509 / 768 * 100vw);
+        height: calc(246 / 768 * 100vw);
+        margin-left: calc(45 / 768 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .textarea::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .second-gap {
+        padding-top: calc(24 / 768 * 100vw);
+    }
+
+    .input-container {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: calc(14 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+        display: flex;
+        align-items: center;
+        height: calc(24 / 768 * 100vw);
+    }
+    
+    .input-container input {
+        display: none;
+    }
+    
+    .input-container input:checked ~ label::before {
+        background-color: #787878;
+    }
+
+    .input-container label {
+        padding-left: calc(77 / 768 * 100vw);
+    }
+    
+    .input-container label::before {
+        content: '';
+        position: absolute;
+        left: calc(43 / 768 * 100vw);
+        top: 0;
+        width: calc(24 / 768 * 100vw);
+        height: calc(24 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid #787878;
+        padding: calc(4 / 768 * 100vw);
+        background-clip: content-box;
+    }
+
+    .button-box {
+        padding-top: calc(56 / 768 * 100vw);
+        padding-right: calc(210 / 768 * 100vw);
+        padding-bottom: calc(37 / 768 * 100vw);
+        padding-left: calc(210 / 768 * 100vw);
+    }
+
+    .button {
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        background: #1A226B;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 *100vw);
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(80 / 1440 * 100vw);
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        z-index: 9999;
+    }
+
+    .header__logo {
+        width: calc(222 / 1440 *100vw);
+        height: calc(50 / 1440 * 100vw);
+        margin-top: calc(18 / 1440 * 100vw);
+        margin-left: calc(30 / 1440 * 100vw);
+    }
+
+    .header__title {
+        font-weight: 700;
+        font-size: calc(36 / 1440 * 100vw);
+        line-height: calc(44 / 1440 * 100vw);
+        color: #787878;
+        padding-top: calc(21 / 1440 * 100vw);
+        padding-left: calc(30 / 1440 * 100vw);
+    }
+
+    .header__registration {
+        padding-top: calc(25 / 1440 * 100vw);
+        padding-left: calc(628 / 1440 * 100vw);
+        font-weight: 700;
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(29 / 1440 * 100vw);
+        color: #1A226B;
+        text-decoration: none;
+    }
+
+    .header__sign-in {
+        padding-top: calc(25 / 1440 * 100vw);
+        padding-left: calc(28 / 1440 * 100vw);
+        font-weight: 700;
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(29 / 1440 * 100vw);
+        color: #787878;
+        text-decoration: none;
+    }
+
+    .form {
+        width: calc(600 / 1440 * 100vw);
+        height: calc(875 / 1440 * 100%);
+        margin-top: calc(180 / 1440 * 100vw);
+        margin-right: calc(420 / 1440 * 100vw);
+        margin-bottom: calc(129 / 1440 * 100vw);
+        margin-left: calc(420 / 1440 * 100vw);
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-title {
+        padding-top: calc(26 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+        color: #787878;
+        text-align: center;
+    }
+
+    .label-email {
+        padding-top: calc(15 / 1440 * 100vw);
+        padding-bottom: calc(5 / 1440 *100vw);
+        padding-left: calc(45 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .input-email {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        margin-left: calc(45 / 1440 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .input-email::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .label-password {
+        padding-top: calc(11 / 1440 * 100vw);
+        padding-bottom: calc(5 / 1440 *100vw);
+        padding-left: calc(45 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .input-password {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        margin-left: calc(45 / 1440 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #787878;    
+    }
+
+    .input-password::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .label-password-confirm {
+        padding-top: calc(11 / 1440 * 100vw);
+        padding-bottom: calc(5 / 1440 *100vw);
+        padding-left: calc(45 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .input-password-confirm {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        margin-left: calc(45 / 1440 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #787878;    
+    }
+
+    .input-password-confirm::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .radio-title {
+        padding-top: calc(11 / 1440 * 100vw);
+        padding-bottom: calc(5 / 1440 *100vw);
+        padding-left: calc(43 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .gap {
+        padding-top: calc(9 / 1440 * 100vw);
+    }
+
+    .radio {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: calc(14 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+        display: flex;
+        align-items: center;
+        height: calc(20 / 1440 * 100vw);
+    }
+
+    .radio input {
+        display: none;
+    }
+
+    .radio input:checked ~ label::before {
+        background-color: #787878;
+    }
+
+    .radio label {
+        padding-left: calc(74 / 1440 * 100vw);
+    }
+
+    .radio label::before {
+        content: '';
+        position: absolute;
+        left: calc(45 / 1440 * 100vw);
+        top: 0;
+        width: calc(20 / 1440 * 100vw);
+        height: calc(20 / 1440 * 100vw);
+        border: calc(2 / 1440 * 100vw) solid #787878;
+        border-radius: 50%;
+        padding: calc(2 / 1440 * 100vw);
+        background-clip: content-box;
+    }
+
+    .label-textarea {
+        padding-top: calc(11 / 1440 * 100vw);
+        padding-bottom: calc(5 / 1440 *100vw);
+        padding-left: calc(45 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .textarea {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(246 / 1440 * 100vw);
+        margin-left: calc(45 / 1440 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .textarea::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .second-gap {
+        padding-top: calc(24 / 1440 * 100vw);
+    }
+
+    .input-container {
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: calc(14 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+        display: flex;
+        align-items: center;
+        height: calc(24 / 1440 * 100vw);
+    }
+
+    .input-container input {
+        display: none;
+    }
+    
+    .input-container input:checked ~ label::before {
+        background-color: #787878;
+    }
+    
+    .input-container label {
+        padding-left: calc(77 / 1440 * 100vw);
+    }
+    
+    .input-container label::before {
+        content: '';
+        position: absolute;
+        left: calc(43 / 1440 * 100vw);
+        top: 0;
+        width: calc(24 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+        border: calc(2 / 1440 * 100vw) solid #787878;
+        padding: calc(4 / 1440 * 100vw);
+        background-clip: content-box;
+    }
+
+    .button-box {
+        padding-top: calc(56 / 1440 * 100vw);
+        padding-right: calc(210 / 1440 * 100vw);
+        padding-bottom: calc(37 / 1440 * 100vw);
+        padding-left: calc(210 / 1440 * 100vw);
+    }
+
+    .button {
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        background: #1A226B;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(16 / 1440 *100vw);
+        color: #FFFFFF;
+    }
+}

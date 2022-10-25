@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(80 / 768 * 100vw);
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: row;
+        z-index: 9999;
+    }
+
+    .header__logo {
+        width: calc(124 /768 *100vw);
+        height: calc(25 / 768 * 100vw);
+        margin-top: calc(25 / 768 * 100vw);
+        margin-left: calc(20 / 768 * 100vw);
+    }
+
+    .header__title {
+        font-weight: 700;
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(29 / 768 * 100vw);
+        color: #787878;
+        padding-top: calc(23 / 768 * 100vw);
+        padding-left: calc(34 / 768 * 100vw);
+    }
+
+    .header__registration {
+        padding-top: calc(30 / 768 * 100vw);
+        padding-left: calc(219 / 768 * 100vw);
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(19 / 768 * 100vw);
+        color: #787878;
+        text-decoration: none;
+    }
+
+    .header__sign-in {
+        padding-top: calc(30 / 768 * 100vw);
+        padding-left: calc(36 / 768 * 100vw);
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(19 / 768 * 100vw);
+        color: #1A226B;
+        text-decoration: none;
+    }
+
+    .form {
+        width: calc(600 / 768 * 100vw);
+        height: calc(383 / 768 * 100%);
+        margin-top: calc(160 / 768 * 100vw);
+        margin-right: calc(84 / 768 * 100vw);
+        margin-bottom: calc(278 / 768 * 100vw);
+        margin-left: calc(84 / 768 * 100vw);
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);    
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .form-title {
+        padding-top: calc(26 / 768 * 100vw);
+        padding-right: calc(243 / 768 * 100vw);
+        padding-left: calc(242 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(50 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+        color: #787878;
+        text-align: center;
+    }
+
+    .label-email {
+        padding-top: calc(17 / 768 * 100vw);
+        padding-bottom: calc(3 / 768 *100vw);
+        padding-left: calc(53 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .label-password {
+        padding-top: calc(13 / 768 * 100vw);
+        padding-bottom: calc(3 / 768 *100vw);
+        padding-left: calc(53 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .input-email {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        margin-left: calc(45 / 768 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #787878;
+    }
+
+    .input-email::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .input-password {
+        width: calc(509 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        margin-left: calc(45 / 768 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 768 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #787878;    
+    }
+
+    .input-password::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .button-box {
+        padding-top: calc(52 / 768 * 100vw);
+        padding-right: calc(210 / 768 * 100vw);
+        padding-bottom: calc(37 / 768 * 100vw);
+        padding-left: calc(210 / 768 * 100vw);
+    }
+
+    .button {
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        background: #1A226B;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 *100vw);
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: calc(80 / 1440 * 100vw);
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: row;
+        z-index: 9999;
+    }
+
+    .header__logo {
+        width: calc(222 /1440 *100vw);
+        height: calc(50 / 1440 * 100vw);
+        margin-top: calc(18 / 1440 * 100vw);
+        margin-left: calc(30 / 1440 * 100vw);
+    }
+
+    .header__title {
+        font-weight: 700;
+        font-size: calc(36 / 1440 * 100vw);
+        line-height: calc(44 / 1440 * 100vw);
+        color: #787878;
+        padding-top: calc(21 / 1440 * 100vw);
+        padding-left: calc(30 / 1440 * 100vw);
+    }
+
+    .header__registration {
+        padding-top: calc(25 / 1440 * 100vw);
+        padding-left: calc(628 / 1440 * 100vw);
+        font-weight: 700;
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(29 / 1440 * 100vw);
+        color: #787878;
+        text-decoration: none;
+    }
+
+    .header__sign-in {
+        padding-top: calc(25 / 1440 * 100vw);
+        padding-left: calc(28 / 1440 * 100vw);
+        font-weight: 700;
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(29 / 1440 * 100vw);
+        color: #1A226B;
+        text-decoration: none;
+    }
+
+    .form {
+        width: calc(600 / 1440 * 100vw);
+        height: calc(383 / 1440 * 100%);
+        margin-top: calc(205 / 1440 * 100vw);
+        margin-right: calc(437 / 1440 * 100vw);
+        margin-bottom: calc(233 / 1440 * 100vw);
+        margin-left: calc(403 / 1440 * 100vw);
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-title {
+        padding-top: calc(26 / 1440 * 100vw);
+        padding-right: calc(243 / 1440 * 100vw);
+        padding-left: calc(242 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+        color: #787878;
+        text-align: center;
+    }
+
+    .label-email {
+        padding-top: calc(17 / 1440 * 100vw);
+        padding-bottom: calc(3 / 1440 *100vw);
+        padding-left: calc(53 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .label-password {
+        padding-top: calc(13 / 1440 * 100vw);
+        padding-bottom: calc(3 / 1440 *100vw);
+        padding-left: calc(53 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .input-email {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        margin-left: calc(45 / 1440 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #787878;
+    }
+
+    .input-email::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .input-password {
+        width: calc(509 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        margin-left: calc(45 / 1440 * 100vw);
+        background: #FFFFFF;
+        border: 2px solid #787878;
+        padding-left: calc(15 / 1440 * 100vw);
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #787878;    
+    }
+
+    .input-password::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: #CCCCCC;
+    }
+
+    .button-box {
+        padding-top: calc(52 / 1440 * 100vw);
+        padding-right: calc(210 / 1440 * 100vw);
+        padding-bottom: calc(37 / 1440 * 100vw);
+        padding-left: calc(210 / 1440 * 100vw);
+    }
+
+    .button {
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        background: #1A226B;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: calc(24 / 1440 * 100vw);
+        line-height: calc(16 / 1440 *100vw);
+        color: #FFFFFF;
+    }
+}
