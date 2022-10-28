@@ -24,6 +24,14 @@ resultButton.addEventListener("click", (event) => {
   else if (operator === "/" && secondNumeral === "0") {
     result = "Операция некорректна";
   } 
+
+  else if ((firstNumeral.length == 0) || (firstNumeral.indexOf(" ") != -1)) {
+    result = "Вы не ввели первое число или добавили пробел в поле ввода";
+  }
+
+  else if ((secondNumeral.length == 0) || (secondNumeral.indexOf(" ") != -1)) {
+    result = "Вы не ввели второе число или добавили пробел в поле ввода";
+  }
   
   else {
     switch (operator) {
