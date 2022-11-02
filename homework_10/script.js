@@ -10,7 +10,7 @@ const fibonacci = (function makeFibonacciFunction() {
     console.log(result);
     return result;
   };
-})()
+})();
 
 fibonacci();
 fibonacci();
